@@ -1,7 +1,7 @@
 class SessionsController < ApplicationController
 
   def new
-    
+
   end
 
   def create
@@ -9,9 +9,10 @@ class SessionsController < ApplicationController
       u.name = auth['info']['name']
       u.email = auth['info']['email']
     end 
+    session[:user_id] = @user.id 
   end
 
   def destroy
-  end 
+  end
 
 end
