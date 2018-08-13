@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get '/login'=> 'sessions#new'
   post '/login' => 'sessions#create'
   post '/destroy' => 'sessions#destroy'
+  get 'auth/facebook/callback' => 'sessions#create'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
