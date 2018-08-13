@@ -7,6 +7,8 @@ gem 'sqlite3'
 # Used to mock an https url
 gem 'thin'
 # Use SCSS for stylesheets
+gem 'omniauth'
+gem 'omniauth-facebook'
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
